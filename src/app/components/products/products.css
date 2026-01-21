@@ -1,0 +1,111 @@
+.products {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 25px;
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  background-color: #ffffff; /* manteniendo fondo blanco */
+  border: 1px solid #000000; /* borde sutil para que destaque */
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08); /* sombra ligera */
+  
+}
+
+h1 {
+  text-align: center;
+  color: #212529; /* gris oscuro profesional */
+  font-weight: 600;
+  margin-bottom: 25px;
+  font-size: 24px;
+}
+
+input{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 10px 10px;
+  border: 1px solid #1f2021;
+  border-radius: 6px;
+  font-size: 14px;
+ 
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #007bff;
+}
+.Add-product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #68717b;
+    padding: 20px;
+
+}
+button {
+  padding: 10px 18px;
+  font-size: 14px;
+  background-color: #007bff; /* azul corporativo */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+
+}
+
+button:hover {
+  background-color: #0056b3;
+  transform: translateY(-1px);
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 15px;
+  margin-bottom: 10px;
+  background-color: #f9f9f9; /* ligeramente gris para destacar sobre blanco */
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+li:hover {
+  background-color: #f1f3f5;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* Botón de eliminar */
+li button {
+  background-color: #dc3545; /* rojo corporativo */
+  padding: 6px 12px;
+}
+
+li button:hover {
+  background-color: #a71d2a;
+}
+
+.tabla-products {
+
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr;
+    gap: 10px;
+    font-weight: 600;
+    padding: 10px 0;
+    border-bottom: 2px solid #e0e0e0;
+}
+
+.N-productos {
+    border: #000000 1px solid;
+}
