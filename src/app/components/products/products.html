@@ -1,0 +1,23 @@
+<div class="products">
+    <h2>Lista de productos</h2>
+  
+    @if (ProductsList.length === 0) {
+      <p>No hay productos existentes</p>
+    } @else {
+      <ul>
+        @for (product of ProductsList; track $index) {
+          <li><div>{{product}} <button (click)="DeleteProduct($index)">Eliminar</button></div></li>
+        }
+      </ul>
+    }
+
+  
+  </div>
+
+  <div class="Add-product"> 
+
+    <input [(ngModel)]="NewProduct" type="text" placeholder="Agregar Productos">
+    <button (click)="AddProduct()">Agregar</button>
+
+  </div>
+  

@@ -1,0 +1,6 @@
+body{
+
+    border: 2px solid blueviolet ;
+    display: flex;
+    justify-content: center;
+}

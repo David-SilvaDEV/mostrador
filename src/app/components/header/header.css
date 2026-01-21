@@ -1,0 +1,10 @@
+
+header {
+    border: 1px solid rgb(77, 52, 52);
+    min-height: 100px;
+    background-color: rgba(255, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    font-family:sans-serif;
+  }
+  
